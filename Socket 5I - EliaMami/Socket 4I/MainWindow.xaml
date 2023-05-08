@@ -1,0 +1,29 @@
+﻿<Window x:Class="Socket_4I.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socket_4I"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="387.5" Width="721.166">
+    <Grid>
+        <ListBox x:Name="lstMessages" HorizontalAlignment="Left" Height="268" Margin="10,41,0,0" VerticalAlignment="Top" Width="291"/>
+        <Button x:Name="btnSend" Content="Send" HorizontalAlignment="Left" Margin="435,320,0,0" VerticalAlignment="Top" Width="120" Click="btnSend_Click"/>
+        <TextBox x:Name="txtTo" HorizontalAlignment="Left" Height="23" Margin="339,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="127.0.0.1" GotFocus="txtTo_GotFocus" LostFocus="txtTo_LostFocus"/>
+        <TextBox x:Name="txtMessaggio" HorizontalAlignment="Left" Height="90" Margin="339,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" AcceptsReturn="True" Width="315"/>
+        <Label Content="Ip address:" HorizontalAlignment="Left" Margin="339,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Message:" HorizontalAlignment="Left" Margin="339,189,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="487,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Text="Default" GotFocus="txtName_GotFocus" LostFocus="txtName_LostFocus"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="487,10,0,0" VerticalAlignment="Top" Width="167"/>
+        <Label Content="Messages:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPort" HorizontalAlignment="Left" Height="23" Margin="339,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="11000" GotFocus="txtPort_GotFocus" LostFocus="txtPort_LostFocus"/>
+        <Label Content="Sender Port:" HorizontalAlignment="Left" Margin="339,69,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Contacts:" HorizontalAlignment="Left" Margin="487,69,0,0" VerticalAlignment="Top" Width="167"/>
+        <ComboBox x:Name="cbxRubrica" HorizontalAlignment="Left" Margin="487,100,0,0" VerticalAlignment="Top" Width="167" SelectionChanged="cbxRubrica_SelectionChanged"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="487,127,0,0" VerticalAlignment="Top" Width="167" Click="btnAdd_Click"/>
+        <Label Content="Receiver port:" HorizontalAlignment="Left" Margin="10,314,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="txtRecvPort" HorizontalAlignment="Left" Height="23" Margin="106,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81" GotFocus="txtRecvPort_GotFocus" LostFocus="txtRecvPort_LostFocus" Text="10000"/>
+        <Button x:Name="btnChange" Content="Change" HorizontalAlignment="Left" Margin="204,320,0,0" VerticalAlignment="Top" Width="97" Click="btnChange_Click"/>
+
+    </Grid>
+</Window>
